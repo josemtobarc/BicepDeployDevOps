@@ -18,9 +18,9 @@ variables:
   templateFile: 'main.bicep'
 
 steps:
-- task: AzureCLI@2
-  inputs:
-    azureSubscription: 'azuresub'
-    scriptType: 'batch'
-    scriptLocation: 'inlineScript'
-    inlineScript: 'az --version'
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: 'azuresub'
+        scriptType: 'batch'
+        scriptLocation: 'inlineScript'
+        inlineScript: 'az --version'
